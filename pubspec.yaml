@@ -23,6 +23,10 @@ flutter:
     - lib/assets/Hintergründe/bg_startscreen.png
     - lib/assets/details/T2.png
     - lib/assets/details/Top Card.png
+    - lib/assets/details/Mask group(2).png
+    - lib/assets/details/Mask group(3).png
+    - lib/assets/details/Mask group(1).png
+    - lib/assets/details/Mask group.png
 flutter_launcher_icons:
   image_path: "assets/launcher_icon.png"
   android: true
