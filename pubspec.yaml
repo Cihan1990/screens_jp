@@ -1,0 +1,33 @@
+name: screens_jp
+description: "A new Flutter project."
+publish_to: 'none'  # Ensures this package cannot be published to pub.dev
+version: 0.1.0
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/assets/Icons/Burger_3D.png
+    - lib/assets/Icons/cat cupcakes_3D.png
+    - lib/assets/Icons/chick cupcakes_3D.png
+    - lib/assets/Icons/ice cream stick_3D.png
+    - lib/assets/Icons/Icecream_3D.png
+    - lib/assets/Icons/Ice.cream.png
+    - lib/assets/Icons/star.png
+    - lib/assets/Hintergründe/bg_mainscreen.png
+    - lib/assets/Hintergründe/bg_startscreen.png
+    - lib/assets/details/T2.png
+    - lib/assets/details/Top Card.png
+flutter_launcher_icons:
+  image_path: "assets/launcher_icon.png"
+  android: true
+  ios: true
+  min_sdk_android: 21
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
