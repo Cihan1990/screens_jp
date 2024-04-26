@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_unnecessary_containers, unnecessary_const, prefer_const_constructors
+// ignore_for_file: avoid_unnecessary_containers, unnecessary_const, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'dart:ui';
 
@@ -95,7 +95,7 @@ class _ScreenShopState extends State<ScreenShop> {
                                                 indent: 20,
                                                 endIndent: 20,
                                               ),
-                                              const Row(children: [
+                                              Row(children: [
                                                 SizedBox(width: 23),
                                                 Text(
                                                   'Ingredients',
@@ -117,24 +117,28 @@ class _ScreenShopState extends State<ScreenShop> {
                                                   textAlign: TextAlign.right,
                                                 ),
                                               ]),
-                                              SizedBox(height: 10),
+                                              SizedBox(height: 6),
                                               Row(
                                                 children: [
                                                   SizedBox(width: 22),
-                                                  Image.asset("lib/assets/details/Mask group(2).png"),
-                                                  Icon(Icons.cancel,
-                                                      color: Colors.white,
-                                                      size: 12.0),
-                                                  Icon(Icons.cake,
-                                                      color: Colors.white,
-                                                      size: 12.0),
-                                                  Icon(
-                                                      Icons
-                                                          .local_fire_department,
-                                                      color: Color.fromARGB(
-                                                          255, 160, 159, 159),
-                                                      size: 12.0),
-                                                  SizedBox(width: 130),
+                                                  Image.asset(
+                                                      'lib/assets/details/Mask group(3).png'),
+                                                  Padding(
+                                                      padding:
+                                                          EdgeInsets.all(2.0)),
+                                                  Image.asset(
+                                                      'lib/assets/details/Mask group.png'),
+                                                  Padding(
+                                                      padding:
+                                                          EdgeInsets.all(2.0)),
+                                                  Image.asset(
+                                                      'lib/assets/details/Mask group(1).png'),
+                                                  Padding(
+                                                      padding:
+                                                          EdgeInsets.all(2.0)),
+                                                  Image.asset(
+                                                      'lib/assets/details/Mask group(2).png'),
+                                                  SizedBox(width: 90),
                                                   Icon(
                                                     Icons.star,
                                                     color: Colors.white,
