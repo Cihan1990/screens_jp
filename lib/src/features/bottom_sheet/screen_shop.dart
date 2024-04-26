@@ -61,7 +61,7 @@ class _ScreenShopState extends State<ScreenShop> {
                                             )),
                                         padding: const EdgeInsets.all(10),
                                         child: Container(
-                                          child: const Column(
+                                          child: Column(
                                             children: [
                                               Text(
                                                 'Mogli\'s Cup',
@@ -95,7 +95,7 @@ class _ScreenShopState extends State<ScreenShop> {
                                                 indent: 20,
                                                 endIndent: 20,
                                               ),
-                                              Row(children: [
+                                              const Row(children: [
                                                 SizedBox(width: 23),
                                                 Text(
                                                   'Ingredients',
@@ -121,8 +121,7 @@ class _ScreenShopState extends State<ScreenShop> {
                                               Row(
                                                 children: [
                                                   SizedBox(width: 22),
-                                                  //Image(
-                                                  // 'lib/assets/details/Mask group(2).png'),
+                                                  Image.asset("lib/assets/details/Mask group(2).png"),
                                                   Icon(Icons.cancel,
                                                       color: Colors.white,
                                                       size: 12.0),
