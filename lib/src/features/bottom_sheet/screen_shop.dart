@@ -121,8 +121,8 @@ class _ScreenShopState extends State<ScreenShop> {
                                               Row(
                                                 children: [
                                                   SizedBox(width: 22),
-                                                  Image(
-                                                      'lib/assets/details/Mask group(2).png'),
+                                                  //Image(
+                                                  // 'lib/assets/details/Mask group(2).png'),
                                                   Icon(Icons.cancel,
                                                       color: Colors.white,
                                                       size: 12.0),
