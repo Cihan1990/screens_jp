@@ -16,7 +16,7 @@ Widget buildOverviewChoiceChip() {
         border: Border.all(color: Colors.white),
       ),
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: const Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -25,7 +25,7 @@ Widget buildOverviewChoiceChip() {
               color: Colors.white30,
               size: 14,
             ),
-            SizedBox(width: 10),
+            SizedBox(width: 6),
             Text(
               'All Categories',
               style: TextStyle(

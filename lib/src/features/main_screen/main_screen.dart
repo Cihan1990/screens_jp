@@ -63,7 +63,7 @@ class MainScreen extends StatelessWidget {
                     if (index == 0) {
                       return Padding(
                         padding: const EdgeInsets.only(
-                            left: 22.0, right: 8, top: 16, bottom: 16),
+                            left: 22.0, right: 8, top: 14, bottom: 14),
                         child: buildOverviewChoiceChip(),
                       );
                     } else {
