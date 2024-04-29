@@ -1,6 +1,8 @@
 // ignore_for_file: depend_on_referenced_packages, prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
+
+import 'package:screens_jp/src/features/bottom_sheet/screen_shop.dart';
 import 'package:screens_jp/src/features/main_screen/burger_widget.dart';
 import 'package:screens_jp/src/features/main_screen/choicechip.dart';
 import 'package:screens_jp/src/features/main_screen/overview_choicechip.dart';
@@ -135,23 +137,11 @@ class MainScreen extends StatelessWidget {
 void _showBottomSheet(BuildContext context, Product product) {
   showModalBottomSheet(
       context: context,
+      isScrollControlled: true,
       builder: (BuildContext context) {
         return Container(
-            height: 200,
-            color: Colors.red,
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Text('Bottom sheet'),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    child: const Text('Close bottom sheet'),
-                  ),
-                ],
-              ),
-            ));
+          child: ScreenShop(),
+          height: 700,
+        );
       });
 }
