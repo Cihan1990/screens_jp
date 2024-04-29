@@ -37,8 +37,8 @@ class BurgerWidget extends StatelessWidget {
               Text(
                 "4.8",
                 style: TextStyle(
-                    fontWeight: FontWeight.w200,
-                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white38,
                     fontSize: 12),
               ),
             ],
