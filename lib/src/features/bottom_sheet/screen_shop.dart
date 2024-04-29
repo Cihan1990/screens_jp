@@ -17,7 +17,7 @@ class _ScreenShopState extends State<ScreenShop> {
     return Container(
       color: Color.fromARGB(255, 42, 37, 35),
       child: Padding(
-          padding: const EdgeInsets.all(0.0),
+          padding: const EdgeInsets.all(.0),
           child: Column(children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.end,

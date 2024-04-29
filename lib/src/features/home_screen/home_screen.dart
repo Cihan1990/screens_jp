@@ -3,6 +3,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:screens_jp/src/features/bottom_sheet/screen_shop.dart';
+import 'package:screens_jp/src/features/main_screen/main_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -65,60 +67,67 @@ class HomeScreen extends StatelessWidget {
                     )),
                 padding: const EdgeInsets.all(10),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Text(
-                      'Feeling Snackish Today?',
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    const Text(
-                      'Explore Angi\'s most popular snack selection and get instantly happy.',
-                      style: TextStyle(
-                        fontSize: 16.5,
-                        color: Color.fromARGB(255, 160, 159, 159),
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(height: 20),
-                    Container(
-                      ///// Eigentlich der Button, der aber, wegen dem Verlauf, als Container gemacht ist!
-                      width: 180,
-                      height: 40,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          //Verlauf von links nach rechts
-                          colors: [
-                            Color.fromARGB(219, 248, 114, 221),
-                            Color.fromRGBO(253, 152, 137, 1),
-                          ],
-                          begin: Alignment.centerLeft,
-                          end: Alignment.centerRight,
-                        ),
-                        borderRadius: BorderRadius.circular(10.0),
-                        //boxShadow: <BoxShadow>[
-                        //BoxShadow(
-                        //  color: Color.fromARGB(255, 247, 2, 96),
-                        //blurRadius: 15.0,
-                        //offset: Offset(0.0, 0.75))
-                        //],
-                      ),
-                      child: Center(
-                        child: Text(
-                          'Order Now',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 24,
-                              fontWeight: FontWeight.w700),
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text(
+                        'Feeling Snackish Today?',
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
                         ),
                       ),
-                    ),
-                  ],
-                ),
+                      const SizedBox(height: 10),
+                      const Text(
+                        'Explore Angi\'s most popular snack selection and get instantly happy.',
+                        style: TextStyle(
+                          fontSize: 16.5,
+                          color: Color.fromARGB(255, 160, 159, 159),
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 20),
+                      //Größe vom Hintergrund des Button
+                      Container(
+                        width: 180,
+                        height: 40,
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            //Farbverlauf vom Button von links nach rechts
+                            colors: [
+                              Color.fromARGB(219, 248, 114, 221),
+                              Color.fromRGBO(253, 152, 137, 1),
+                            ],
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                          ),
+                          borderRadius: BorderRadius.circular(10.0),
+                          border: Border.all(
+                            color: const Color.fromARGB(255, 160, 159, 159),
+                          ),
+                        ),
+                        //Button Bereich
+                        child: MaterialButton(
+                          onPressed: () {
+                            // Navigate to the next screen
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MainScreen()),
+                            );
+                          },
+                          child: const Center(
+                            child: Text(
+                              'Order Now',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w700),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ]),
               ),
             ),
           ))

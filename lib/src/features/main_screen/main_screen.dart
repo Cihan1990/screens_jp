@@ -1,4 +1,4 @@
-// ignore_for_file: depend_on_referenced_packages, prefer_const_constructors, use_key_in_widget_constructors
+// ignore_for_file: depend_on_referenced_packages, prefer_const_constructors, use_key_in_widget_constructors, sort_child_properties_last, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 

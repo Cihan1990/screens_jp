@@ -5,6 +5,6 @@ import 'package:screens_jp/src/features/main_screen/main_screen.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: MainScreen(),
+    home: HomeScreen(),
   ));
 }
