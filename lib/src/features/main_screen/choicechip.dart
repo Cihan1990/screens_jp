@@ -22,7 +22,7 @@ Widget buildChoiceChip(
     selectedColor: selectedColor,
     backgroundColor: backgroundColor,
     shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(35), // Adjust the radius as needed
+      borderRadius: BorderRadius.circular(30), // Adjust the radius as needed
       side: const BorderSide(color: Colors.white), // Set the border color
     ),
   );

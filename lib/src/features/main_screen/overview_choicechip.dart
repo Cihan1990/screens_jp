@@ -12,7 +12,7 @@ Widget buildOverviewChoiceChip() {
           end: Alignment.centerRight,
           colors: [Colors.black, Color.fromARGB(255, 204, 138, 201)],
         ),
-        borderRadius: BorderRadius.circular(35),
+        borderRadius: BorderRadius.circular(30),
         border: Border.all(color: Colors.white),
       ),
       child: Padding(
